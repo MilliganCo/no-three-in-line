@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "no-three-75"
+version = "0.1.0"
+description = "Exact verification and constructive search for No-Three-in-Line on 75x75"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "hypothesis>=6"]
+solver = ["ortools>=9.14", "python-sat>=1.9.dev15,<2"]
+cpu = ["numba>=0.61"]
+viz = ["matplotlib>=3.9"]
+gpu = ["cupy-cuda13x[ctk]>=14.2,<15"]
+
+[project.scripts]
+no3 = "no_three_75.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

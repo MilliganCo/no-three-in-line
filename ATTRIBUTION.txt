@@ -1,0 +1,23 @@
+Attribution for No-three-in-line geometry/search research source
+
+The selected Python files form the local project's verifier/search implementation. Source inspection did not identify a vendored upstream source tree or third-party license header within the selected paths. This is not a global proof of authorship; no new license or copyright holder is inferred.
+
+Published mathematical and implementation references recorded in the local project notes:
+
+- Thomas Prellberg: CP-SAT formulation and rotational symmetry reduction.
+  Paper: https://arxiv.org/abs/2602.07751
+  Reference code: https://github.com/ThomasPrellberg/no-three-in-line---CP-SAT
+  The local notes record inspection of upstream commit 6faf475.
+
+- Achim Flammenkamp: configuration database, compact encoding alphabet and symmetry prefixes.
+  Documentation: https://wwwhomes.uni-bielefeld.de/achim/no3in/readme.html
+  Configuration source: https://wwwhomes.uni-bielefeld.de/achim/no3in/download/configurations/
+  Earlier nearby configurations in the private research workspace were credited to Thomas Prellberg and Marijn Heule. Those raw/decoded configuration tables are excluded from this publication. The included n=75 near-solution is a local computed search state, not one of the copied neighboring-size records.
+
+- Mitchell Riley: exact CUDA enumeration architecture considered as a reference.
+  https://github.com/mvr/no-three-in-line
+  The local notes record inspection of commit 164f98c and explicitly distinguish that enumerator from this project's permutation local-search approach. No upstream CUDA repository is bundled.
+
+The references above preserve provenance recorded in the local research notes. Their current contents/licenses and the present global n=75 frontier were not re-audited for this source-only review. Excluding external source/configuration payloads avoids guessing redistribution terms for those collections.
+
+Only one locally saved coordinate set is included. It is labeled a near-solution with a reported E=10 and is expected to fail exact no-collinearity validation. No valid n=75 witness, global lower bound, novelty result or reproduced large-run performance claim is asserted.
